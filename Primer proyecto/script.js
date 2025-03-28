@@ -1,5 +1,5 @@
 function mostrarDetalle(imagen, descripcion) {
-    document.getElementById('imagen-detalle').src = imagen;
+    document.getElementById('imagen-detalle').src = `assets/${imagen}`;
     document.getElementById('descripcion').innerText = descripcion;
 }
 
