@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Galería de Imágenes</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#detalle">Detalle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-4">
+        <section id="galeria" class="row">
+            <h2 class="text-center">Galería de mis mascotas</h2>
+            <div class="col-md-4">
+                <img src="assets/imagen1.jpg"class="img-thumbnail" onclick="mostrarDetalle('imagen1.jpg', 'Zury, Beagle: Perro mediano, amigable y enérgico, con gran olfato y orejas largas.')">
+            </div>
+            <div class="col-md-4">
+                <img src="assets/imagen2.jpg" class="img-thumbnail" onclick="mostrarDetalle('imagen2.jpg', 'Violet, Gato Angora: Gato elegante, de pelaje largo y sedoso, inteligente y juguetón.')">
+            </div>
+            <div class="col-md-4">
+                <img src="assets/imagen3.jpg" class="img-thumbnail" onclick="mostrarDetalle('imagen3.jpg', 'Cloeh, Pinscher: Perro pequeño, ágil y valiente, con cuerpo delgado y orejas puntiagudas.')">
+            </div>
+        </section>
+        <section id="detalle" class="mt-4">
+            <h2 class="text-center">Detalle de Imagen</h2>
+            <img id="imagen-detalle" class="img-fluid d-block mx-auto" src="">
+            <p id="descripcion" class="text-center">Presiona cada imagen para apreciar su descripción.</p>
+        </section>
+        <section id="sobre-nosotros" class="mt-4">
+            <h2 class="text-center">Sobre Nosotros</h2>
+            <p id="descripcion" class="text-center">¿Quieres saber más? Llena el formulario y te contactaremos pronto.</p>
+            <form id="contacto-form" class="w-50 mx-auto">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="correo" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2025 Galería de Imágenes</p>
+        <p>Proyecto desarrollado para BIT (Build Innovate Transform)</p>
+        <p>Hecho por Mauricio Robayo</p>
+        <p>Contacto: <a href="mailto:Joanrobayo33@gmail.com" class="text-white">Joanrobayo33@gmail.com</a></p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

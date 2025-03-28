@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #343a40;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.img-thumbnail {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
